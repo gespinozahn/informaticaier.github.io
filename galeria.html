@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Responsiva</title>
+<style>
+    ody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="./images/img1.jpg" alt="Imagen 1">
+        <img src="./images/img2.jpg" alt="Imagen 2">
+        <img src="./images/img3.jpg" alt="Imagen 3">
+        <img src="./images/img1.jpg" alt="Imagen 1">
+        <img src="./images/img2.jpg" alt="Imagen 2">
+        <img src="./images/img3.jpg" alt="Imagen 3">
+        <img src="./images/img1.jpg" alt="Imagen 1">
+        <img src="./images/img2.jpg" alt="Imagen 2">
+        <img src="./images/img3.jpg" alt="Imagen 3">
+        <img src="./images/img1.jpg" alt="Imagen 1">
+        <img src="./images/img2.jpg" alt="Imagen 2">
+        <img src="./images/img3.jpg" alt="Imagen 3">
+
+        <!-- Agrega más imágenes aquí -->
+    </div>
+    <script src="./js/galeria.js"></script>
+    <div id="modal">
+</div>
+</body>
+</html>
